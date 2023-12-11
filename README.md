@@ -46,14 +46,13 @@ Welcome to Bistros, a dynamic and modern web application designed to enhance the
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/bistros.git
+   git clone https://github.com/elijah-droid/bistros.git
    ```
 
 2. **Install Dependencies:**
    ```bash
    # Navigate to the project directory
    cd bistros
-   # Install dependencies (if applicable)
    ```
 
 3. **Set Up the Database:**
