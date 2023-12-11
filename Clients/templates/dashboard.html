@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+{% block hero %}
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Dashboard</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a href="#">{{request.path}}</a></li>
+            </ol>
+        </nav>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+  
+      <!-- Main content -->
+      <main class="">
+        <div class="dashboard-heading">
+          <h2>Client Dashboard</h2>
+        </div>
+  
+        <div class="dashboard-content">
+          <!-- Add content for reservations, orders, etc. here -->
+          <h3>Reservations</h3>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>People</th>
+                  <th>Deposit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Sample reservation data, replace with dynamic data from Django -->
+                <tr>
+                  <td>2023-12-15</td>
+                  <td>7:00 PM</td>
+                  <td>5</td>
+                  <td>5000 UGX</td>
+                </tr>
+                <!-- Add more reservation rows as needed -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+{% endblock %}
